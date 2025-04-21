@@ -16,24 +16,24 @@
 ```markdown
 ![Demo Screenshot](assets/demo.png)
 ```
-🔗 Table of Contents
-Overview
+## 🔗 Table of Contents
+[Overview](#overview)
 
-Features
+[Features](#features)
 
-Getting Started
+[Getting Started](#gettingstarted)
 
-Running the App
+[Running the App](#runningtheapp)
 
-Project Structure
+[Project Structure](#structure)
 
-Limitations
+[Limitations](#limitations)
 
-Planned Enhancements
+[Planned Enhancements](#enhancements)
 
-License
+[License](#license)
 
-🧭 Overview
+# 🧭 Overview <a name="overview"></a>
 The AI Job Agent is a Python-based tool that helps job seekers tailor their CVs for specific roles by:
 
 Parsing job description content from a provided URL
@@ -44,15 +44,21 @@ Parsing CVs in .pdf or .docx format (with OCR fallback for scanned PDFs)
 
 Suggesting which skills to add based on a predefined or custom skill list
 
-✨ Features
+# ✨ Features <a name="features"></a>
 ✅ Upload .pdf or .docx CVs
+
 ✅ Extract job description content from a URL
+
 ✅ Auto-detect CV sections (skills, experience, education)
+
 ✅ Basic keyword-based skill matching
+
 ✅ OCR support for scanned/image-based PDFs
+
 ✅ Streamlit-powered UI – no setup beyond Python required
 
-⚙️ Getting Started
+
+# ⚙️ Getting Started <a name="gettingstarted"></a>
 🐍 Install Python Packages
 ```bash
 pip install -r requirements.txt
@@ -70,7 +76,7 @@ sudo apt install tesseract-ocr poppler-utils ghostscript
 ```
 ⚠️ tesseract is required for OCR (image-based PDFs)
 
-▶️ Running the App
+▶️ Running the App <a name="runningtheapp"></a>
 Create a virtual environment (optional but recommended):
 
 ```bash
@@ -84,7 +90,7 @@ streamlit run app.py
 ```
 Open http://localhost:8501 in your browser.
 
-🗂 Project Structure
+# 🗂 Project Structure <a name="structure"></a>
 ```bash
 ai-job-agent-poc/
 ├── app.py                # Streamlit app
@@ -93,7 +99,7 @@ ai-job-agent-poc/
 ├── sample_cv.pdf         # (Optional) Example CV for testing
 └── assets/               # (Optional) Screenshots or visual assets
 ```
-⚠️ Limitations
+# ⚠️ Limitations <a name="limitations"></a>
 LinkedIn data must be input manually (no API integration)
 
 Skill extraction uses basic keyword matching (NLP not context-aware)
@@ -102,7 +108,7 @@ Does not currently assess experience level or frequency of skills
 
 Suggestions are not generated in full sentences (just skill gaps)
 
-🧪 Planned Enhancements
+# 🧪 Planned Enhancements <a name="enhancements"></a>
 Semantic skill extraction using spaCy or Transformers
 
 Section-aware matching (skills vs experience vs certifications)
@@ -113,9 +119,9 @@ Export suggestions into an updated CV draft
 
 Online deployment (Streamlit Cloud or Hugging Face Spaces)
 
-📜 License
+# 📜 License <a name="license"></a>
 This project is licensed under the MIT License.
 
-🙋‍♀️ Contributions
+# 🙋‍♀️ Contributions
 Ideas, suggestions, and pull requests are welcome!
 Let’s make job hunting smarter together.
