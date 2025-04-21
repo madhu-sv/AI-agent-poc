@@ -7,3 +7,8 @@ pdfminer.six
 pytesseract
 Pillow
 PyMuPDF
+openai>=1.0.0
+python-dotenv
+numpy
+faiss-cpu
+python-magic
